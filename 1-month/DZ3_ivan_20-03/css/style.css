@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    height: 100vh;
+    background-color: #002547;
+    background-image: url(../images/image-1.png);
+    background-repeat: no-repeat;
+    background-position: right -100px top 180px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+}

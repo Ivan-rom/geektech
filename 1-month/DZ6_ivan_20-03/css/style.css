@@ -1,0 +1,190 @@
+.home {
+    display: flex;
+    align-items: center;
+    background-color: #002547;
+    background-image: url(../images/home.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    min-height: 100vh;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.home__content {
+    width: 580px;
+}
+.home__content .btn {
+    margin-right: 30px;
+}
+.home__title > span {
+    color: #0076D9;
+    text-transform: uppercase;
+}
+.home__title h1 {
+    margin-top: 6px;
+    margin-bottom: 25px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 84px;
+}
+.home__title h1 span {
+    color: #0092FF;
+}
+.home__title h1 .fw-600 {
+    font-weight: 600;
+}
+.home__title h1 .fw-700 {
+    font-weight: 700;
+}
+.home__caption {
+    width: 401px;
+    color: #D7DDE3;
+    font-size: 18px;
+    line-height: 29px;
+}
+.home__caption a {
+    color: #E4E9EE;
+    text-transform: capitalize;
+}
+.home__text {
+    width: 450px;
+    color: #7C92A5;
+    font-size: 16px;
+    line-height: 22px;
+    padding-top: 14px;
+    border-top: 1px solid #2A526E;
+}
+.home__text b {
+    font-weight: 500;
+    color: #AFBEC9;
+}
+.home__actions {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+/*********************/
+.brands {
+    padding: 140px 0;
+}
+.brands__inner {
+    display: flex;
+    justify-content: space-between;
+}
+/*************/
+.two_sass__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.two_saas__image {
+    margin-left: -140px;
+}
+.two_saas__content {
+    flex: 0 1 496px;
+}
+.two_saas__content p {
+    font-size: 16px;
+    line-height: 25px;
+}
+.two_saas__content ul {
+    margin-top: 45px;
+    list-style: none;
+}
+.two_saas__content li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.two_saas__content img {
+    margin-right: 15px;
+}
+/****************/
+.like_saas {
+    margin-bottom: 140px;
+}
+.like_saas .block-title h2 {
+    width: 465px;
+}
+.like-saas__cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 75px;
+}
+.card {
+    border-radius: 6px;
+    box-shadow: 0px 12px 45px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+.card__img {
+    transition: .2s;
+}
+.card:hover .card__img {
+    transform: scale(1.1);
+}
+.card__description {
+    padding: 24px 20px;
+    background-color: #fff;
+}
+.card__description > p {
+    font-weight: 500;
+    font-size: 20px;
+    max-width: 267px;
+    margin-bottom: 20px;
+}
+.card__info {
+    display: flex;
+}
+.card__info > div {
+    display: flex;
+    align-items: center;
+}
+.card__time {
+    margin-right: 17px;
+}
+.card__info img {
+    margin-right: 8px;
+}
+.like_saas__buttons .btn-transparent {
+    border-color: #E6F1FB;
+    color: #1E92FF;
+}
+.like_saas__buttons .btn {
+    margin-right: 25px;
+}
+/* ********************** */
+.electric_saas {
+    text-align: center;
+    margin-bottom: 140px;
+}
+.electric_saas h2 {
+    width: 628px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.electric_saas p {
+    color: #4C4C4C;
+    font-size: 16px;
+}
+.electric__list {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px 166px;
+}
+.electric__item {
+    max-width: 226px;
+}
+.item__image {
+    margin-bottom: 24px;
+    transition: .2s;
+}
+.electric__item:hover .item__image {
+    transform: scale(1.1);
+}
+.item__title {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 20px;
+}
+/*****************************/
