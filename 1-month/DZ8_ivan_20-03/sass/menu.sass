@@ -1,0 +1,54 @@
+.menu
+    position: fixed
+    padding-top: 50px
+    padding-bottom: 20px
+    top: 0
+    left: 0
+    right: 0
+    background-color: #002547
+    @media (max-width: 1186px)
+        width: 100%
+    @media (max-width: 900px)
+        padding-top: 20px
+        padding-bottom: 15px
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .btn
+            @media (max-width: 780px)
+                display: none
+    &__list
+        display: flex
+        justify-content: space-between
+        align-items: center
+        gap: 40px
+        @media (max-width: 780px)
+            display: none
+    &__link
+        color: #99A8B5
+        text-decoration: none
+        transition: .2s
+        &::after
+            content: ""
+            margin-top: 5px
+            display: block
+            height: 2px
+            border-radius: 3px
+            background-color: transparent
+            transition: .2s
+        &:hover
+            color: #ffffff
+            &::after
+                background-color: #ffffff
+    .burger__button
+        display: none
+    .burger
+        @media (max-width: 780px)
+            display: none
+        &__button
+            background: none
+            border: none
+            fill: #fff
+            @media (max-width: 780px)
+                display: block

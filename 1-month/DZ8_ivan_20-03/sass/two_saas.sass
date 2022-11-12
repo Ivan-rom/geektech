@@ -1,0 +1,50 @@
+.two_saas
+    &__inner 
+        display: flex
+        justify-content: space-between
+        @media (max-width: 900px)
+            flex-direction: column
+            align-items: center
+            text-align: center
+    &__image 
+        margin-left: -140px
+        @media (max-width: 1186px)
+            margin-left: -100px
+            max-width: 580px
+        @media (max-width: 1000px)
+            margin-left: -85px
+            max-width: 460px
+        @media (max-width: 900px)
+            margin-left: -330px
+            max-width: 460px
+        @media (max-width: 768px)
+            display: none
+        img
+            @media (max-width: 1186px)
+                height: 80%
+            @media (max-width: 1000px)
+                height: 60%
+            @media (max-width: 900px)
+                height: 50%
+    &__content 
+        flex: 1 0 496px
+        @media (max-width: 900px)
+            max-width: 630px
+            margin-top: -20px
+        @media (max-width: 768px)
+            margin-top: 0
+        & p 
+            font-size: 16px
+            line-height: 25px
+        & ul 
+            margin-top: 45px
+            list-style: none
+            text-align: left
+            @media (max-width: 1180px)
+                margin-top: 20px
+        & li 
+            display: flex
+            align-items: center
+            margin-bottom: 25px
+        & img 
+            margin-right: 15px

@@ -1,0 +1,39 @@
+.burger
+    position: fixed
+    right: 0
+    z-index: 999
+    height: 100vh
+    width: 100%
+    background-color: #0000007e
+    opacity: 0
+    transition: .2s
+    display: none
+    &.active
+        opacity: 1
+        display: block
+        .burger__content
+            transform: translateX(0)
+    &__content
+        width: 50%
+        height: 100%
+        margin-left: auto
+        background-color: #002547
+        padding: 25px
+        transform: translateX(100%)
+        transition: .2s
+    &__list
+        display: flex
+        gap: 15px
+        flex-direction: column
+        margin-bottom: 15px
+    &__item
+        display: inline-block
+        margin-right: auto
+    &__close
+        background: none
+        border: none
+        position: absolute
+        top: 25px
+        right: 25px
+        svg
+            fill: #fff
