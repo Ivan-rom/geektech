@@ -1,0 +1,36 @@
+.two_saas__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.two_saas__image {
+  margin-left: -140px;
+}
+.two_saas__content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 496px;
+          flex: 0 1 496px;
+}
+.two_saas__content p {
+  font-size: 16px;
+  line-height: 25px;
+}
+.two_saas__content ul {
+  margin-top: 45px;
+  list-style: none;
+}
+.two_saas__content li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+.two_saas__content img {
+  margin-right: 15px;
+}

@@ -1,0 +1,27 @@
+.menu
+    position: absolute
+    top: 50px
+    left: 50%
+    transform: translateX(-50%)
+    &__inner, &__list
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__item:not(:last-child)
+        margin-right: 40px
+    &__link
+        color: #99A8B5
+        text-decoration: none
+        transition: .2s
+        &::after
+            content: ""
+            margin-top: 5px
+            display: block
+            height: 2px
+            border-radius: 3px
+            background-color: transparent
+            transition: .2s
+        &:hover
+            color: #ffffff
+            &::after
+                background-color: #ffffff

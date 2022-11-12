@@ -1,0 +1,7 @@
+.brands {
+  padding: 140px 0;
+}
+.brands__inner {
+  display: flex;
+  justify-content: space-between;
+}
