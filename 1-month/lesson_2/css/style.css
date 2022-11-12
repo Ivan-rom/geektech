@@ -1,0 +1,27 @@
+#first {
+    background-color: #e565e0;
+    width: 500px;
+    /*background-color: rgb(229,101,204);*/
+    /*background-color: rgba(229,101,204,.28);*/
+    color: orange;
+}
+/* 0123456789abcdef */
+.first {
+    color: blue;
+}
+div {
+    color: red !important;
+    font-size: 25px;
+}
+div {
+    color: purple;
+}
+p {
+    width: 400px;
+    /*text-align: left;*/
+    /*text-align: right;*/
+    /*text-align: center;*/
+    text-align: justify;
+    text-indent: 50px;
+    line-height: 22px;
+}
