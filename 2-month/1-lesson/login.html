@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <script>
+        // спросить у пользователя его имя
+        // если это ваше имя, тогда выводится "привет"
+        // если это кто-то другой, то выводится "вам сюда нельзя"
+        var name = prompt("Введите имя:");
+        if (name === "Иван") {
+            var password = Number(prompt("Введите пароль:"));
+            if (password === "123") {
+                alert("Привет");
+            } else {
+                alert("Пароль не верный");
+            }
+        } else {
+            alert("Имя не верное");
+        }
+    </script>
+</body>
+</html>

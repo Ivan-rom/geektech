@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 1</title>
+</head>
+<body>
+    <script>
+        function askForRate() {
+            var rate = prompt("Пожалуйста оцените наш сервис:");
+            if (rate < 1 || rate > 10) {
+                alert("Оценка должна быть от 1 до 10");
+                askForRate();
+            } else if (rate <= 5) {
+                alert("Мы работаем над улучшением нашего сервиса");
+            } else {
+                alert("Спасибо за высокую оценку");
+            }
+        }
+        askForRate();
+    </script>
+</body>
+</html>
