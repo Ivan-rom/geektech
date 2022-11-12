@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  width: 1146px;
+  margin: 0 auto;
+}
+
+.block-title {
+  margin-bottom: 25px;
+}
+.block-title > span {
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1D92FF;
+}
+.block-title h2 {
+  margin-top: 10px;
+  width: 425px;
+  font-size: 39px;
+  line-height: 52px;
+  font-weight: 400;
+}
+.block-title h2 span {
+  font-weight: 600;
+}
+
+.btn {
+  display: inline-block;
+  height: 53px;
+  border-radius: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 1px solid transparent;
+  line-height: 51px;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: center;
+  transition: 0.25s;
+}
+.btn.btn-lg {
+  min-width: 205px;
+}
+.btn.btn-blue {
+  background-color: #1D92FF;
+  border-color: #1D92FF;
+  color: #ffffff;
+}
+.btn.btn-white {
+  background-color: #fff;
+  border-color: #fff;
+  color: #1D92FF;
+}
+.btn.btn-white:hover {
+  background-color: #1D92FF;
+  border-color: #1D92FF;
+  color: #ffffff;
+}
+.btn.btn-transparent {
+  border-color: #193B59;
+  color: #ffffff;
+}
+.btn.btn-transparent:hover {
+  background-color: white;
+  border-color: #ffffff;
+  color: #1D92FF;
+}

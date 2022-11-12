@@ -1,0 +1,17 @@
+@import "vars"
+
+%default
+    font-size: $fz
+    color: $mainColor
+
+@mixin default
+    font-size: $fz
+    color: $mainColor
+    margin: 0 auto
+
+
+@mixin link($def, $hover)
+    a
+        color: $def
+        &:hover
+            color: $hover

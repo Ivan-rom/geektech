@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  width: 1146px;
+  margin: 0 auto;
+}
+@media (max-width: 1186px) {
+  .container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.block-title {
+  margin-bottom: 25px;
+}
+.block-title > span {
+  font-size: 1.14rem;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1D92FF;
+}
+.block-title h2 {
+  margin-top: 10px;
+  width: 425px;
+  font-size: 39px;
+  line-height: 52px;
+  font-weight: 400;
+}
+.block-title h2 span {
+  font-weight: 600;
+}
+
+.btn {
+  display: inline-block;
+  height: 53px;
+  border-radius: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 1px solid transparent;
+  line-height: 51px;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: center;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+.btn.btn-lg {
+  min-width: 205px;
+}
+.btn.btn-blue {
+  background-color: #1D92FF;
+  border-color: #1D92FF;
+  color: #ffffff;
+}
+.btn.btn-white {
+  background-color: #fff;
+  border-color: #fff;
+  color: #1D92FF;
+}
+.btn.btn-white:hover {
+  background-color: #1D92FF;
+  border-color: #1D92FF;
+  color: #ffffff;
+}
+.btn.btn-transparent {
+  border-color: #193B59;
+  color: #ffffff;
+}
+.btn.btn-transparent:hover {
+  background-color: white;
+  border-color: #ffffff;
+  color: #1D92FF;
+}
+
+a {
+  color: #ffffff;
+}
+a:hover {
+  color: #1D92FF;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #002547;
+  background-image: url(../images/home.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  min-height: 100vh;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+@media (max-width: 1350px) and (min-width: 1001px) {
+  .home {
+    background-size: 40%;
+    background-position: right center;
+  }
+}
+@media (max-width: 1000px) {
+  .home {
+    background: #002547;
+  }
+}
+@media (max-width: 768px) {
+  .home {
+    min-height: auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+}
+.home__content {
+  width: 580px;
+}
+@media (max-width: 768px) {
+  .home__content {
+    width: 100%;
+    text-align: center;
+  }
+}
+.home__content .btn {
+  margin-right: 30px;
+}
+@media (max-width: 513px) {
+  .home__content .btn {
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+  }
+}
+.home__title > span {
+  font-size: 14px;
+  color: #1D92FF;
+  margin: 0 auto;
+  color: #0076D9;
+  text-transform: uppercase;
+}
+@media (max-width: 525px) {
+  .home__title > span {
+    font-size: 12px;
+  }
+}
+.home__title h1 {
+  margin-top: 6px;
+  margin-bottom: 25px;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 84px;
+}
+@media (max-width: 768px) {
+  .home__title h1 {
+    font-size: 50px;
+    line-height: 70px;
+  }
+}
+@media (max-width: 525px) {
+  .home__title h1 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 380px) {
+  .home__title h1 {
+    font-size: 30px;
+    line-height: 43px;
+  }
+}
+.home__title h1 span {
+  color: #0092FF;
+}
+.home__title h1 .fw-600 {
+  font-weight: 600;
+}
+.home__title h1 .fw-700 {
+  font-weight: 700;
+}
+.home__caption {
+  max-width: 401px;
+  color: #D7DDE3;
+  font-size: 18px;
+  line-height: 29px;
+}
+@media (max-width: 768px) {
+  .home__caption {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.home__caption a {
+  color: #E4E9EE;
+  text-transform: capitalize;
+}
+.home__text {
+  max-width: 450px;
+  color: #7C92A5;
+  font-size: 16px;
+  line-height: 22px;
+  padding-top: 14px;
+  border-top: 1px solid #2A526E;
+}
+@media (max-width: 768px) {
+  .home__text {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    line-height: normal;
+  }
+}
+.home__text b {
+  font-weight: 500;
+  color: #AFBEC9;
+  font-size: 14px;
+  color: #1D92FF;
+  margin: 0 auto;
+}
+.home__actions {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
