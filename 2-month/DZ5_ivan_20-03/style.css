@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: silver;
+    padding: 20px;
+}
+
+.todo_form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 750px;
+    margin: 0 auto 10px;
+}
+
+input,
+button {
+    border-radius: 0;
+    border: none;
+    margin-right: 5px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+li {
+    background-color: teal;
+    padding: 20px;
+    border: 2px solid seagreen;
+    border-radius: 5px;
+}
