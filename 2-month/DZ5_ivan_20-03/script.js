@@ -8,36 +8,9 @@ removeTask = (button) => {
     });
 }
 
-changeSubmit = (element, form, input) => {
-    form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        const h3 = document.createElement("h3");
-        h3.textContent = input.value;
-        element.removeChild(form);
-        element.prepend(h3);
-
-    });
-}
-
-changeTask = (button, element, textElement) => {
+changeTask = (button, textElement) => {
     button.addEventListener("click", () => {
-        const changeForm = document.createElement("form");
-        const changeInput = document.createElement("input");
-        const submitButton = document.createElement("input");
-
-        changeForm.setAttribute("method", "#");
-        changeInput.setAttribute("type", "text");
-        submitButton.setAttribute("type", "submit");
-
-        element.removeChild(textElement);
-        changeInput.value = textElement.textContent;
-
-        changeForm.append(changeInput);
-        changeForm.append(submitButton);
-
-        changeSubmit(element, changeForm, changeInput);
-
-        element.prepend(changeForm);
+        textElement.textContent = prompt();
     })
 }
 
@@ -49,12 +22,12 @@ createTask = (value) => {
 
     h3.textContent = value;
 
-    button.textContent = "Made!";
+    button.textContent = "Delete";
     button.setAttribute("class", "made_button");
     removeTask(button);
     
-    changeButton.textContent = "Change";
-    changeTask(changeButton, li, h3);
+    changeButton.textContent = "Edit";
+    changeTask(changeButton, h3);
 
     li.append(h3);
     li.append(changeButton);
