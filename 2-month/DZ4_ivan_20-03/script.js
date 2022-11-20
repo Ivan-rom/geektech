@@ -1,56 +1,58 @@
 // counter /////////////////////////////////////////////////
-var btnPlus = document.querySelector(".counter-plus");    //
-var btnMinus = document.querySelector(".counter-minus");  //
-var counterText = document.querySelector(".counter");     //
+const btnPlus = document.querySelector(".counter-plus");  //
+const btnMinus = document.querySelector(".counter-minus");//
+const counterText = document.querySelector(".counter");   //
 btnPlus.addEventListener("click", () => {                 //
     counterText.style.color = "green";                    //
     counterText.textContent++;                            //
 });                                                       //
 btnMinus.addEventListener("click", () => {                //
     counterText.style.color = "red";                      //
-    if (counterText.textContent != 0) {                   //
-        counterText.textContent--;                        //
-    }                                                     //
+    counterText.textContent != 0 ? counterText.textContent-- : false;
 });                                                       //
 ////////////////////////////////////////////////////////////
 
 // mouseChecker ////////////////////////////////////////////
-var xCords = document.querySelector(".x-cords");          //
-var yCords = document.querySelector(".y-cords");          //
-var mouseBlock = document.querySelector(".mouse");        //
-mouseBlock.addEventListener("mousemove", (evt) => {       //
-    xCords.textContent = evt.x;                           //
-    yCords.textContent = evt.y;                           //
+const xCords = document.querySelector(".x-cords");        //
+const yCords = document.querySelector(".y-cords");        //
+const mouseBlock = document.querySelector(".mouse");      //
+mouseBlock.addEventListener("mousemove", e => {           //
+    xCords.textContent = e.x;                             //
+    yCords.textContent = e.y;                             //
 });                                                       //
 ////////////////////////////////////////////////////////////
 
 // traffic light ///////////////////////////////////////////
-var red = document.querySelector(".red");                 //
-var yellow = document.querySelector(".yellow");           //
-var green = document.querySelector(".green");             //
-var form = document.querySelector("form");                //
-var message = document.querySelector(".message");         //
-form.addEventListener("submit", (evt) => {                //
+const red = document.querySelector(".red");               //
+const yellow = document.querySelector(".yellow");         //
+const green = document.querySelector(".green");           //
+const form = document.querySelector("form");              //
+const message = document.querySelector(".message");       //
+form.addEventListener("submit", e => {                    //
     // отмена отправки формы                              //
-    evt.preventDefault();                                 //
+    e.preventDefault();                                   //
     // установка дефолтного цвета                         //
     red.style.backgroundColor = "#2d2d2d";                //
     yellow.style.backgroundColor = "#2d2d2d";             //
     green.style.backgroundColor = "#2d2d2d";              //
     // получение значения из инпута со всеми вариантами   //
-    var input = document.querySelector(".color-input").value.toUpperCase().trim();
+    const input = document.querySelector(".color-input").value.toUpperCase().trim();
     // логика программы                                   //
-    if (input === "КРАСНЫЙ") {                            //
-        red.style.backgroundColor = "red";                //
-        message.textContent = "STOP";                     //
-    } else if (input === "ЖЕЛТЫЙ") {                      //
-        yellow.style.backgroundColor = "yellow";          //
-        message.textContent = "WAIT";                     //
-    } else if (input === "ЗЕЛЕНЫЙ") {                     //
-        green.style.backgroundColor = "green";            //
-        message.textContent = "GO";                       //
-    } else {                                              //
-        message.textContent = "Не правильный цвет";       //
+    switch (input) {                                      //
+        case "КРАСНЫЙ":                                   //
+            red.style.backgroundColor = "red";            //
+            message.textContent = "STOP";                 //
+            break;                                        //
+        case "ЖЕЛТЫЙ":                                    //
+            yellow.style.backgroundColor = "yellow";      //
+            message.textContent = "WAIT";                 //
+            break;                                        //
+        case "ЗЕЛЕНЫЙ":                                   //
+            green.style.backgroundColor = "green";        //
+            message.textContent = "GO";                   //
+            break;                                        //
+        default:                                          //
+            message.textContent = "Не правильный цвет";   //
     }                                                     //
 });                                                       //
 ////////////////////////////////////////////////////////////

@@ -2,19 +2,7 @@ const list = document.getElementById("todo_list");
 const input = document.getElementById("input");
 const form = document.querySelector("form");
 
-removeTask = (button) => {
-    button.addEventListener("click", (e) => {
-        list.removeChild(e.target.parentElement);
-    });
-}
-
-changeTask = (button, textElement) => {
-    button.addEventListener("click", () => {
-        textElement.textContent = prompt();
-    })
-}
-
-createTask = (value) => {
+createTask = value => {
     const li = document.createElement("li");
     const h3 = document.createElement("h3");
     const button = document.createElement("button");
@@ -23,24 +11,21 @@ createTask = (value) => {
     h3.textContent = value;
 
     button.textContent = "Delete";
-    button.setAttribute("class", "made_button");
-    removeTask(button);
+    button.classList.add("made_button");
+    button.onclick = () => list.removeChild(li);
     
     changeButton.textContent = "Edit";
-    changeTask(changeButton, h3);
+    changeButton.onclick = () => {
+        const newText = prompt(`Editing\n${h3.textContent}:`).trim();
+        newText != "" ? h3.textContent = newText : false;
+    };
 
-    li.append(h3);
-    li.append(changeButton);
-    li.append(button);
-    
-    return li;
+    li.append(h3, changeButton, button);
+    list.append(li);
 }
 
 form.onsubmit = (e) => {
     e.preventDefault();
-    const inputValue = input.value.trim();
-    if (inputValue != "") {
-        list.append(createTask(inputValue));
-    }
+    input.value.trim() != "" ? createTask(input.value.trim()) : false;
     input.value = "";
 }

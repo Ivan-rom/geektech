@@ -8,9 +8,9 @@
 </head>
 <body>
     <script>
-        function askForRate() {
-            var rate = prompt("Пожалуйста оцените наш сервис:");
-            if (rate < 1 || rate > 10) {
+        const askForRate = () => {
+            const rate = prompt("Пожалуйста оцените наш сервис:");
+            if (rate < 1 || rate > 10 || isNaN(rate)) {
                 alert("Оценка должна быть от 1 до 10");
                 askForRate();
             } else if (rate <= 5) {
