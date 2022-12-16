@@ -1,0 +1,14 @@
+body {
+    background-color: grey;
+}
+.wrapper {
+    width: 400px;
+    height: 300px;
+    border: 2px solid red;
+    position: relative;
+}
+
+.box {
+    background-color: blue;
+    position: absolute;
+}
