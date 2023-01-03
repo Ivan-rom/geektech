@@ -1,0 +1,205 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+button {
+    padding: 5px;
+}
+
+#get {
+    width: 100%;
+}
+
+#todo-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+li {
+    padding: 15px;
+    padding-right: 20px;
+    color: #fff;
+    border: 3px solid rgb(181, 155, 88);
+    margin: 15px;
+    position: relative;
+}
+
+.todo-button {
+    width: 11px;
+    height: 11px;
+    border: none;
+    border-radius: 1px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.todo-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 5px;
+    height: 3px;
+    border: 0px solid rgb(49, 170, 49);
+    transition: .2s all linear;
+}
+
+.todo-button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-3px, -3px) rotate(45deg);
+    width: 8px;
+    height: 3px;
+    border: 0px solid rgb(187, 75, 75);
+    border-bottom-width: 0;
+    transition: .2s all linear;
+}
+
+.finished .todo-button::after {
+    border-bottom-width: 2px;
+}
+
+.finished .todo-button::before {
+    width: 8px;
+    height: 3px;
+    transform: translate(-5px, -3px) rotate(-45deg);
+    border-color: rgb(187, 75, 75);
+    border-bottom-width: 2px;
+}
+
+.unfinished .todo-button::before {
+    border-left-width: 2px;
+    border-bottom-width: 2px;
+}
+
+.finished {
+    background-color: rgb(49, 170, 49);
+}
+
+.unfinished {
+    background-color: rgb(187, 75, 75);
+}
+
+
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2b2b2b9d;
+    display: none;
+}
+
+.modal.shown {
+    display: block;
+}
+
+.modal-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 100px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: .2s all linear;
+}
+
+
+
+.modal-block.loading {
+    --d:100px;
+    --angle:120deg; 
+    --sinus:0.866; /* = sinus(angle) */
+
+    background-image: repeating-linear-gradient(var(--angle), rgb(49, 170, 49), rgb(49, 170, 49) 40px, rgb(187, 75, 75) 40px, rgb(187, 75, 75) 60px var(--d));
+    background-size: calc(var(--d)/var(--sinus)) 100%;
+    animation: AnimationName 2s linear infinite reverse;
+}
+
+.modal-block.success {
+    background: rgb(49, 170, 49);
+}
+
+.modal-block.error {
+    background: rgb(187, 75, 75);
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: calc(var(--d)/var(--sinus)) 0;
+    }
+}
+
+#add {
+    width: 100%;
+    display: block;
+}
+
+#add.hidden {
+    display: none;
+}
+
+.form-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2b2b2b9d;
+    display: none;
+}
+
+#close {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.form-modal.shown {
+    display: block;
+}
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    background-color: #fff;
+    padding: 20px;
+    width: 400px;
+}
+
+label {
+    display: block;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    resize: none;
+}
+
+form button {
+    width: 100%;
+}
