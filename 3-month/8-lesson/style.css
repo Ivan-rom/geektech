@@ -1,0 +1,17 @@
+html {
+    font-family: sans-serif;
+}
+
+.todo {
+    display: flex;
+    align-items: center;
+}
+
+.todo > button {
+    width: 50px;
+    height: 40px;
+}
+
+.done {
+    text-decoration: line-through;
+}
