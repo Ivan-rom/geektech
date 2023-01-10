@@ -23,30 +23,5 @@
     }
   ],
   "requests": [
-    {
-      "name": "asd",
-      "age": "12",
-      "id": 1
-    },
-    {
-      "name": "Ivan",
-      "age": "18",
-      "id": 2
-    },
-    {
-      "name": "dsa",
-      "age": "1",
-      "id": 3
-    },
-    {
-      "name": "df",
-      "age": "0",
-      "id": 4
-    },
-    {
-      "name": "Ivan",
-      "age": "23",
-      "id": 5
-    }
   ]
 }
