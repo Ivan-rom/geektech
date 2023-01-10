@@ -6,7 +6,8 @@
     "json-server": "^0.17.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "json-server --watch DZ8_ivan_20-03/db.json"
   },
   "author": "",
   "license": "ISC",
