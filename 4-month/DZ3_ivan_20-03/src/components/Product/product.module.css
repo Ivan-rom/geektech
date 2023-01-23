@@ -1,0 +1,42 @@
+.product {
+  display: flex;
+  padding: 15px 5px;
+  border: 2px solid silver;
+  width: 30%;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.productImage {
+  width: 150px;
+  height: 150px;
+}
+
+.productText {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.productTitle {
+  font-size: 24px;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.productPrice {
+  font-weight: 600;
+  display: inline-block;
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.productButtons {
+  display: flex;
+  gap: 5px;
+}
