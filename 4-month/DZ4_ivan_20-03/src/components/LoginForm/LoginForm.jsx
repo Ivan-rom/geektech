@@ -23,6 +23,10 @@ function LoginForm({ display, closeForm }) {
       password === rPassword
     ) {
       alert("Форма отправлена!");
+      setEmail("");
+      setPassword("");
+      setRPassword("");
+      setCheck("");
     } else {
       alert("Вы что-то заполнили не так!");
     }
