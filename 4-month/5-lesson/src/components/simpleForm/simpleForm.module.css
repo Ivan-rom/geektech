@@ -1,0 +1,15 @@
+.container {
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.studentForm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.studentForm input {
+    max-width: 50%;
+}
