@@ -1,0 +1,15 @@
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+label,
+input {
+  display: block;
+  margin-bottom: 3px;
+}
+
+input {
+  margin-bottom: 5px;
+}
